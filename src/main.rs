@@ -4,6 +4,7 @@ mod day1;
 mod day2;
 mod day3;
 mod day4;
+mod day5;
 
 fn main() -> io::Result<()> {
     let mut args = env::args();
@@ -28,6 +29,10 @@ fn main() -> io::Result<()> {
         "4" => {
             println!("part1 answer: {}", day4::part_one(&input));
             println!("part2 answer: {}", day4::part_two(&input));
+        }
+        "5" => {
+            println!("part1 answer: {}", day5::part_one(&input));
+            println!("part2 answer: {}", day5::part_two(&input));
         }
         _ => {
             panic!("unimplemented!");
